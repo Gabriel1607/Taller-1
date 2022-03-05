@@ -1,9 +1,17 @@
-@font-face {
-    font-family: ABCGravity;
-    src: url("./fonts/ABCGravity-Normal-Trial.otf"),
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.gravity{
-font-family: ABCGravity;
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: larger;
+}
+.font{
+    font-family: 'Titillium Web', sans-serif;
 }
 .flex{
     display: flex;
@@ -11,10 +19,29 @@ font-family: ABCGravity;
 header{
     background-color: #19AED2;
 }
-.navbar{
-align-content:flex-start
+.logo{
+margin: 0px 30px;
 }
+.logo *{
+    padding: 10px;
+}
+.navbar{
+justify-content:space-around;
+align-items: center;
+background-image: url(./img/bg.jpg);
+background-size: cover;
+}
+
+.navbar__list{
+    list-style: none;
+    }
 .navbar__list li{
 padding: 30px;
-
+}
+.navbar__buttons *{
+margin-right: 10px;
+margin-left: 10px;
+padding: 2px;
+background-color: Transparent;
+border: none;
 }
