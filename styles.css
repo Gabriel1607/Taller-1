@@ -14,14 +14,17 @@ a {
     font-family: 'Titillium Web', sans-serif;
     font-size: larger;
 }
+h1{
+    font-size: 4.5em;
+}
+ h3{
+    font-size: 2.25em;
+}
 .font{
     font-family: 'Titillium Web', sans-serif;
 }
 .flex{
     display: flex;
-}
-header{
-    background-color: #19AED2;
 }
 .navbar__logo{
 margin: 0px 30px;
@@ -36,7 +39,7 @@ left: 22px;
 justify-content:space-around;
 align-items: center;
 background-image: url(./img/bg.jpg);
-background-size: cover;
+background-size: cover; 
 }
 
 
@@ -56,14 +59,14 @@ border: none;
 
 .banner {
     width: 100%;
-    height: 612px;
+    height: 630px;
     position: relative;
-   
+    background-image: url(./img/bg.jpg);
+    background-size: cover; 
 }
 .banner__imgs{
     justify-content: space-evenly;
-    background-image: url(./img/bg.jpg);
-    background-size: cover; 
+   
 }
 .banner__imgs *{
 margin: 10px;
@@ -80,16 +83,30 @@ width: 33%;
     bottom: 340px;
     left: 50px;
 }
-.banner__text h1{
-    font-size: 4.5em;
-}
-.banner__text h3{
-    font-size: 2.25em;
-}
+
 .banner__text a{
     background-color: #45A041;
    padding: 15px;
    position: relative;
    top: 25px;
    border: 8px solid black;
+}
+.features h3{
+    text-align: center;
+    background-color: #F89ABA;
+   padding: 15px;
+   position: relative;
+   border: 8px solid black;
+}
+.features__img{
+    position: absolute;
+    height: 666px;
+}
+.features__banner{
+    height: 665px;
+    background-image: url(./img/bg2.png);
+    background-size: cover; 
+}
+.features__banner p{
+color: white;
 }
