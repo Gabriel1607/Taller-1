@@ -24,7 +24,7 @@ ul {
     list-style: none;
 }
 .font{
-    font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', sans-serif;   
 }
 .flex{
     display: flex;
@@ -103,20 +103,21 @@ width: 33%;
 }
 .features__img{
     position: relative;
-    height: 665px;
+    height: 742px;
 }
 .features__banner{
-    height: 665px;
+    height: 742px;
     background-image: url(./img/bg2.png);
     background-size: cover; 
 }
 .features__banner p{
 color: white;
+
 }
 .features__list{
 position: relative;
-left: 795px;
-bottom: 600px;
+left: 853px;
+bottom: 669px;
 }
 .features__list p{
     margin-left: 20px;
@@ -127,3 +128,13 @@ bottom: 600px;
     align-items: center;
     margin-bottom: 122px;
     }
+    .gallery{
+        background-color: #FFB71B;
+    }
+.gallery h3{
+    text-align: center;
+    background-color: #F89ABA;
+   padding: 15px;
+   position: relative;
+   border: 8px solid black;
+}
