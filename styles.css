@@ -20,6 +20,9 @@ h1{
  h3{
     font-size: 2.25em;
 }
+ul {
+    list-style: none;
+}
 .font{
     font-family: 'Titillium Web', sans-serif;
 }
@@ -99,8 +102,8 @@ width: 33%;
    border: 8px solid black;
 }
 .features__img{
-    position: absolute;
-    height: 666px;
+    position: relative;
+    height: 665px;
 }
 .features__banner{
     height: 665px;
@@ -110,3 +113,17 @@ width: 33%;
 .features__banner p{
 color: white;
 }
+.features__list{
+position: relative;
+left: 795px;
+bottom: 600px;
+}
+.features__list p{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.features__list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 122px;
+    }
