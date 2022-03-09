@@ -2,6 +2,7 @@
 html, body {
     font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
+    background-color: #FFB71B;
 }
 * {
     margin: 0;
@@ -130,6 +131,7 @@ ul {
     }
     .gallery{
         background-color: #FFB71B;
+        height:fit-content;
     }
 .gallery h3{
     text-align: center;
@@ -141,6 +143,7 @@ ul {
 .gallery__imgs{
     justify-content: center;
    flex-wrap: wrap;
+   
 }
 .gallery__imgs *{
     margin: 10px;
@@ -157,10 +160,18 @@ ul {
     position: relative;
     top: 25px;
     border: 8px solid black;
+    margin: 36px 30% 102px 30%;
+}
+.gallery a:hover,.banner__text a:hover,.footer button:hover{
+    background-color: white;
 }
 .footer{
     background-color: #19AED2;
     color: white;
+}
+.footer img{
+    border: 8px solid black;
+    
 }
 .footer button{
     background-color: Transparent;
@@ -184,7 +195,7 @@ ul {
     border: 8px solid black;
     align-items:flex-end;
     justify-content: space-between;
-
+    margin-top: -14px;
 }
 .footer__contact *{
     margin: 8px 0;
@@ -195,7 +206,7 @@ ul {
     border: 8px solid black;
     align-items:flex-end;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-top: 49px;
 }
 
 .tyc{
