@@ -1,0 +1,5 @@
+@media all and(max-width: 420px){
+    html,body{
+        background-color: red;
+    }
+}
