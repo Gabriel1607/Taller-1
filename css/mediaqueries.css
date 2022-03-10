@@ -1,5 +1,42 @@
-@media all and(max-width: 420px){
-    html,body{
-        background-color: red;
+@media all and (max-width: 420px){
+    
+    .navbar{
+        display: none;
+    }
+    .navbarm{
+        padding: 10px 0;
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+    .navbarm__logo img{
+   
+    }
+    .navbarm__hamburg{
+    background-color: Transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 58px;
+
+    }
+    .navbarm__hamburg img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .navbarm__buttons button{
+        background-color: Transparent;
+        border: none;
+    margin: 0 10px;
+    }
+    .navbarm__buttons img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .banner__text{
+        bottom: 0px;
+        left: 0px;
     }
 }
