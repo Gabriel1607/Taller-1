@@ -73,8 +73,8 @@
     margin-left: 20px;
     inline-size: 348px;
    }
-   .features__list p{
-    font-size: 0.95em;
+    p{
+    font-size: 0.75em;
    }
    .features__list img{
        width:60px;
@@ -95,4 +95,17 @@
     .gallery__artist img{
         width: 315px; 
    }
+   .gallery a{
+margin: 10px 30% 70px 30%;;   
+}
+.footer{
+    flex-direction: column;
+}
+.footer__newsletter *{
+    margin: 4px 0;
+}
+.footer img{
+    width: 100%;
+    height: auto;
+}
 }

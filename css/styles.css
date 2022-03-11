@@ -183,7 +183,8 @@ transform: scale(1.1);
 }
 .footer img{
     border: 8px solid black;
-    
+    width: 487px;
+    height: 487px;
 }
 .footer button{
     background-color: Transparent;
@@ -218,7 +219,7 @@ transform: scale(1.1);
     border: 8px solid black;
     align-items:flex-end;
     justify-content: space-between;
-    padding-top: 49px;
+    padding-top: 26px;
 }
 
 .tyc{
