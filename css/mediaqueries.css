@@ -71,10 +71,10 @@
     position: static;
     margin-top: 10px;
     margin-left: 20px;
-    inline-size: 554px;
+    inline-size: 348px;
    }
    .features__list p{
-    font-size: 1em;
+    font-size: 0.95em;
    }
    .features__list img{
        width:60px;
@@ -85,4 +85,14 @@
     align-items: center;
     margin-bottom: 50px;
     }
+    .gallery{
+        margin-top: 20px;
+    }
+    .gallery__artist{
+        width: 100%;
+        height: auto;
+    }
+    .gallery__artist img{
+        width: 315px; 
+   }
 }
