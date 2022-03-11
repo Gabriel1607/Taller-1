@@ -14,6 +14,9 @@
     .banner{
         display: none;
     }
+    .featurest__banner{
+        display: none;
+    }
   
     .navbarm{
         padding: 10px 0;
@@ -111,4 +114,96 @@ margin: 10px 30% 70px 30%;;
     width: 100%;
     height: auto;
 }
+}
+@media all and (min-width: 768px) and (max-width:1180px){
+    h1{
+        font-size: 2.2em;
+    }
+     h3{
+        font-size: 1.2em;
+    }
+    .navbar{
+        display: none;
+        }
+    .navbarm{
+        padding: 10px 0;
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+        }
+    .navbarm__hamburg{
+        background-color: Transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        margin-right: 58px;
+    
+        }
+        .navbarm__hamburg img{
+            width: 20px;
+            height: 20px;
+        }
+        
+        .navbarm__buttons button{
+            background-color: Transparent;
+            border: none;
+             margin: 0 10px;
+        }
+        .navbarm__buttons img{
+            width: 20px;
+            height: 20px;
+        }
+        .banner{
+            height: 319px;
+        }
+     
+        .banner__imgs *{
+            width: 33%;
+            margin: 3px;
+        }
+        .banner__text{
+            width: 353px;
+            height: 207px;
+            padding-left: 45px;
+            bottom: 209px;
+            left: -27px;
+        }
+        .banner__text a{
+            padding: 11px
+        }
+     .features__banner{
+         display: none;
+     }
+     .featurest__banner{
+         display: flex;
+         background-image: url(../img/bg2t.png);
+         background-size: cover; 
+         margin-bottom: -60px;
+     }
+     .featurest__imgs{
+         display: flex;
+        flex-direction: column;
+        }
+        .featurest__imgs *{
+            width: 220px;
+            height:220px;
+            margin: -1px;
+        }
+        .featurest__list{
+            margin-top: 61px;
+            margin-left: 20px;
+            inline-size: 466px;
+    overflow-wrap: break-word;
+        }
+        .featurest__list p{
+            color: white;
+            margin-left: 20px;
+        }
+        .featurest__list li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 121px;
+            margin-left: 20px;
+            }
+
 }

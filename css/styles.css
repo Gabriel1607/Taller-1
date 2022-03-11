@@ -53,6 +53,9 @@ header{
 .bannerm{
     display: none;
 }
+.featurest__banner{
+    display: none;
+}
 
 .navbar__list{
     list-style: none;
