@@ -65,7 +65,9 @@
         top: 25px;
         border: 6px solid black;
     }
-   
+   .features h3{
+    border: 6px solid black;
+   }
    .features__img{
        width: 100%;
        height: auto;
@@ -101,19 +103,33 @@
         margin-left: 8px;
   width: 95%;
    }
+   .gallery h3{
+    border: 6px solid black;
+   }
+   .gallery__imgs *{
+    border: 6px solid black;
+   }
    .gallery a{
-margin: 10px 30% 70px 30%;;   
+margin: 10px 30% 70px 30%;
+border: 6px solid black;   
 }
 .footer{
     flex-direction: column;
 }
+
 .footer__newsletter *{
     margin: 4px 0;
 }
-.footer img{
-    width: 100%;
-    height: auto;
+.footer__newsletter{
+    border: 6px solid black;
 }
+.footer__contact{
+    border: 6px solid black;
+}
+
+.footerimg{
+    display: none;
+    }
 }
 @media all and (min-width: 768px) and (max-width:1180px){
     h1{
@@ -205,5 +221,7 @@ margin: 10px 30% 70px 30%;;
             margin-bottom: 121px;
             margin-left: 20px;
             }
-
+.footerimg{
+display: none;
+}
 }
