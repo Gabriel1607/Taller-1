@@ -5,6 +5,9 @@
      h3{
         font-size: 1em;
     }
+    p{
+        font-size: 0.75em;
+       }
     .navbar{
         display: none;
     }
@@ -59,21 +62,21 @@
         top: 25px;
         border: 6px solid black;
     }
-    .features__banner{
-        
-    }
+   
    .features__img{
        width: 100%;
        height: auto;
    }
-   
+   .features__banner{
+       height: 698px;
+   }
    .features__list{
     position: static;
     margin-top: 10px;
     margin-left: 20px;
-    inline-size: 348px;
+    inline-size: 288px;
    }
-    p{
+   .features__list p{
     font-size: 0.75em;
    }
    .features__list img{
@@ -85,15 +88,15 @@
     align-items: center;
     margin-bottom: 50px;
     }
-    .gallery{
-        margin-top: 20px;
-    }
+  
     .gallery__artist{
         width: 100%;
         height: auto;
+        
     }
-    .gallery__artist img{
-        width: 315px; 
+    .gallery__artist img{ 
+        margin-left: 8px;
+  width: 95%;
    }
    .gallery a{
 margin: 10px 30% 70px 30%;;   
