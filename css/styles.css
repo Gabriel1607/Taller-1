@@ -50,6 +50,9 @@ header{
 .navbarm{
     display: none;
 }
+.bannerm{
+    display: none;
+}
 
 .navbar__list{
     list-style: none;
@@ -126,6 +129,9 @@ transform: scale(1.1);
     position: relative;
     left: 853px;
     bottom: 669px;
+    width:auto;
+    inline-size: 554px;
+    overflow-wrap: break-word;
 }
 .features__list p{
     margin-left: 20px;

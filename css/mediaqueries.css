@@ -1,17 +1,24 @@
 @media all and (max-width: 420px){
-    
+    h1{
+        font-size: 2em;
+    }
+     h3{
+        font-size: 1em;
+    }
     .navbar{
         display: none;
     }
+    .banner{
+        display: none;
+    }
+  
     .navbarm{
         padding: 10px 0;
     display: flex;
      justify-content: space-around;
      align-items: center;
     }
-    .navbarm__logo img{
-   
-    }
+  
     .navbarm__hamburg{
     background-color: Transparent;
     border: none;
@@ -34,9 +41,48 @@
         width: 20px;
         height: 20px;
     }
-    
-    .banner__text{
-        bottom: 0px;
-        left: 0px;
+    .bannerm{
+        display: block;
+    }
+    .bannerm__text{
+        background:rgba(0,0,0,0.3);
+        padding-bottom: 66px;
+        padding-left: 30px;
+        color: white;
+        position: absolute;
+        bottom: 49px;
+    }
+    .bannerm__text a{
+        background-color: #45A041;
+        padding: 15px;
+        position: relative;
+        top: 25px;
+        border: 6px solid black;
+    }
+    .features__banner{
+        
+    }
+   .features__img{
+       width: 100%;
+       height: auto;
+   }
+   
+   .features__list{
+    position: static;
+    margin-top: 10px;
+    margin-left: 20px;
+    inline-size: 554px;
+   }
+   .features__list p{
+    font-size: 1em;
+   }
+   .features__list img{
+       width:60px;
+       height: 60px;
+   }
+   .features__list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
     }
 }
