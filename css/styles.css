@@ -148,23 +148,23 @@ transform: scale(1.1);
     .gallery{
         height:fit-content;
     }
-.gallery h3{
+.gallery h3,.product h3{
     text-align: center;
     background-color: #19AED2;
    padding: 15px;
    position: relative;
    border: 8px solid black;
 }
-.gallery__imgs{
+.gallery__imgs,.products{
     justify-content: center;
    flex-wrap: wrap;
    
 }
-.gallery__imgs *{
+.gallery__imgs *, .products *{
     margin: 10px;
     border: 8px solid black;
 }
-.gallery__artist{
+.gallery__artist,.product{
     background-color: #F89ABA; 
 }
 .gallery a{
@@ -232,3 +232,19 @@ transform: scale(1.1);
 #email{
     padding: 14px 100px 14px 20px;
 }
+
+/*SHOP*/
+
+.product a{
+    background-color: #45A041;
+    border: 4px solid black;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 7px 159px;
+    margin-bottom: 26px;
+}
+.product{
+    display: none;
+    }
