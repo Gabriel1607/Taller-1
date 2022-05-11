@@ -50,12 +50,12 @@
     </nav>
     <div id="id01" class="modal">
   
-        <form class="modal__content animate flex" action="/action_page.php" method="post">
+        <div class="modal__content animate flex">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           </div>
       
-          <div id="registerForm" class="container flex">
+          <form id="registerForm" class="container flex">
               <div>
             <label for="uname"><b>Usuario</b></label><br>
             <input type="text" placeholder="Ingresa un usuario" name="uname" >
@@ -69,20 +69,20 @@
             <input type="password" placeholder="Ingresa una contraseña" name="psw" >
                </div>  
             <button class="container__btn" type="submit">Registrarse</button>
-          </div>
-          <div id="loginForm" class="container flex">
+            </form>
+          <form id="loginForm" class="container flex">
             <div>
-            <label for="uname"><b>Usuario</b></label><br>
-            <input type="text" placeholder="Ingresa tu usuario" name="uname" >
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" placeholder="Ingresa tu email" name="email" >
             </div>
             <div>
             <label for="psw"><b>Contraseña</b></label><br>
             <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
              </div>
             <button type="submit">Iniciar sesión</button>
-          </div>
+            </form>
 
-        </form>
+        </div>
       </div>
     <nav class="navbarm flex">
         <button class="navbarm__hamburg">

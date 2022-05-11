@@ -23,6 +23,7 @@ async function createUser(auth, { email, password }) {
          const { user } = await signInWithEmailAndPassword(auth, email, password);
          alert(`Bienvenido, usuario ${user.email}`);
      } catch(e) {
+        console.log(e);
          alert("Correo o contraseña inválida :(");
      }
  }
