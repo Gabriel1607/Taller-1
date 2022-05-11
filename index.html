@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
-    <link href="./css/styles.scss" rel="stylesheet">
-    <link rel="stylesheet" href="./css/mediaqueries.css">
+    <link href="./src/css/styles.scss" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/mediaqueries.css">
 </head>
 
 <body>
@@ -55,25 +55,30 @@
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           </div>
       
-          <div class="container flex">
-            <label for="uname"><b>Usuario</b></label>
+          <div id="registerForm" class="container flex">
+              <div>
+            <label for="uname"><b>Usuario</b></label><br>
             <input type="text" placeholder="Ingresa un usuario" name="uname" >
-
-            <label for="email"><b>Correo</b></label>
+               </div>
+               <div>
+            <label for="email"><b>Correo</b></label><br>
             <input type="email" placeholder="Ingresa un correo" name="email" >
-
-            <label for="psw"><b>Contraseña</b></label>
+               </div>
+               <div>
+            <label for="psw"><b>Contraseña</b></label><br>
             <input type="password" placeholder="Ingresa una contraseña" name="psw" >
-              
+               </div>  
             <button class="container__btn" type="submit">Registrarse</button>
           </div>
-          <div class="container flex">
-            <label for="uname"><b>Usuario</b></label>
+          <div id="loginForm" class="container flex">
+            <div>
+            <label for="uname"><b>Usuario</b></label><br>
             <input type="text" placeholder="Ingresa tu usuario" name="uname" >
-      
-            <label for="psw"><b>Contraseña</b></label>
+            </div>
+            <div>
+            <label for="psw"><b>Contraseña</b></label><br>
             <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
-              
+             </div>
             <button type="submit">Iniciar sesión</button>
           </div>
 
@@ -216,5 +221,6 @@
         </div>
     </footer>
 </body>
-<script src="./js/main.js" type="module"></script>
+<script src="./src/js/functions/app.js"  type="module"></script>
+<script src="./src/js/main.js" type="module"></script>
 </html>

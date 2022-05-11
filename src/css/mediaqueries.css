@@ -192,7 +192,7 @@ border: 6px solid black;
      }
      .featurest__banner{
          display: flex;
-         background-image: url(../img/bg2t.png);
+         background-image: url(../../img/bg2t.png);
          background-size: cover; 
          margin-bottom: -60px;
      }
