@@ -1,0 +1,27 @@
+{
+  "name": "taller-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "firebase": "^9.6.11"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel1607/Taller-1.git"
+  },
+  "author": "Gabriel Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel1607/Taller-1/issues"
+  },
+  "homepage": "https://github.com/Gabriel1607/Taller-1#readme"
+}

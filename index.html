@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/styles.scss" rel="stylesheet">
     <link rel="stylesheet" href="./css/mediaqueries.css">
 </head>
 
@@ -24,7 +24,7 @@
                 <a href="#">Boletas</a>
             </li>
             <li>
-                <a href="#">Contacto</a>
+                <a href="./form.html">Contacto</a>
             </li>
             </ul>
             <div class="navbar__logo">
@@ -42,12 +42,43 @@
                 <button>
                     <img src="./img/carrito.png">
                 </button> 
-                <button>
-                    <img src="./img/buscar.png">
+                <button onclick="document.getElementById('id01').style.display='block'">
+                    <img src="./img/profile.png">
                 </button> 
 
         </div>
     </nav>
+    <div id="id01" class="modal">
+  
+        <form class="modal__content animate flex" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container flex">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Ingresa un usuario" name="uname" >
+
+            <label for="email"><b>Correo</b></label>
+            <input type="email" placeholder="Ingresa un correo" name="email" >
+
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa una contraseña" name="psw" >
+              
+            <button class="container__btn" type="submit">Registrarse</button>
+          </div>
+          <div class="container flex">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Ingresa tu usuario" name="uname" >
+      
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
+              
+            <button type="submit">Iniciar sesión</button>
+          </div>
+
+        </form>
+      </div>
     <nav class="navbarm flex">
         <button class="navbarm__hamburg">
                 <img  src="./img/hamburguer.png" alt="Menu hamburguesa">
@@ -185,5 +216,5 @@
         </div>
     </footer>
 </body>
-<script src="main.js"></script>
+<script src="./js/main.js" type="module"></script>
 </html>

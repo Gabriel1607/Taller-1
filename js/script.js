@@ -52,7 +52,7 @@ products.forEach(e =>{
     if(price>500000){
         document.getElementById(`obj${id}`).style.display = "block";
         document.getElementById(`obj${id}`).getElementsByClassName('name')[0].innerHTML = name;
-        document.getElementById(`obj${id}`).getElementsByClassName('image')[0].src = image
+        document.getElementById(`obj${id}`).getElementsByClassName('image')[0].src = image;
     }
 }
     );
