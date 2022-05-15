@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
+import{onAuthStateChanged} from "firebase/auth";
 
 
 async function createUser(auth, { email, password }) {
@@ -39,5 +40,6 @@ async function createUser(auth, { email, password }) {
  export {
      createUser,
      login,
-     addUserToDatabase
+     addUserToDatabase,
+     onAuthStateChanged
  }

@@ -1,6 +1,9 @@
 
+import { async } from "@firebase/util";
 import { db, auth } from "./functions/app";
-import { login, createUser, addUserToDatabase } from "./functions/auth";
+import { login, createUser, addUserToDatabase, onAuthStateChanged } from "./functions/auth";
+import { getUser } from "./functions/getUser";
+const user = auth.currentUser;
 const registerForm = document.getElementById("registerForm");
 const loginForm = document.getElementById("loginForm");
 var slideIndex = 0;
@@ -45,4 +48,21 @@ loginForm.addEventListener("submit", e => {
   const password = loginForm.psw.value;
   //console.log(`${email}${password}`)
   login(auth, email, password);
+
+onAuthStateChanged(auth,async (user) => {
+  if (user) {
+    
+    const uid = user.uid;
+    let user2 = [];
+    const firebaseUser = await getUser(uid);
+    user2 = firebaseUser;
+   if(user2.isAdmin){
+     location.href = "../../form.html"
+   }else{
+    location.href = "../../shop.html"
+   }
+  
+    
+  } 
+});
 });
