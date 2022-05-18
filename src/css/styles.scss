@@ -108,7 +108,7 @@ transform: scale(1.1);
    top: 25px;
    border: 8px solid black;
 }
-.features h3{
+.features h3, .shopTitle{
     text-align: center;
     background-color: #F89ABA;
    padding: 15px;
@@ -254,7 +254,9 @@ text-align: center;
         background-color: #19AED2;
     }
 }
-
+#category{
+    margin: 50px;
+}
 .forms{
     flex-direction: column;
     align-items: flex-end;

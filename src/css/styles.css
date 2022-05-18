@@ -136,7 +136,7 @@ header {
   border: 8px solid black;
 }
 
-.features h3 {
+.features h3, .shopTitle {
   text-align: center;
   background-color: #F89ABA;
   padding: 15px;
@@ -320,6 +320,10 @@ header {
 
 .product__price {
   background-color: #19AED2;
+}
+
+#category {
+  margin: 50px;
 }
 
 .forms {

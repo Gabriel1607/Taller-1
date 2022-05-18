@@ -10,8 +10,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <link href="./src/css/styles.scss" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/mediaqueries.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar flex">
+                <ul class="navbar__list flex">
+                <li>
+                    <a href="#">Lineup/Artistas</a>
+                </li>
+                <li>
+                    <a href="#">Boletas</a>
+                </li>
+                <li>
+                    <a href="./form.html">Contacto</a>
+                </li>
+                </ul>
+                <div class="navbar__logo">
+                
+                    <img src="./img/logfep.png" alt="Logo Festival Estéreo Picnic">
+                        
+                </div>
+               
+                    <div class="navbar__buttons flex">
+                        <img src="./img/fecha.png">
+                        <img src="./img/lugar.png">
+                    <button>
+                        <img src="./img/ES.png">
+                    </button> 
+                    <button>
+                        <img src="./img/carrito.png">
+                    </button> 
+                    <button onclick="document.getElementById('id01').style.display='block'">
+                        <img src="./img/profile.png">
+                    </button> 
+    
+            </div>
+        </nav>
+        <div id="id01" class="modal">
+      
+            <div class="modal__content animate flex">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+          
+              <form id="registerForm" class="container flex">
+                <div id="logd" class="container__LoggedForm">
+                    <span id ="currentUserGreet">Bienvenido, usuario</span>
+                </div>
+                  <div id="logdn't" class="container__noLoggedForm">
+                      <div>
+                <label for="uname"><b>Usuario</b></label><br>
+                <input type="text" placeholder="Ingresa un usuario" name="uname" >
+                   </div>
+                   <div>
+                <label for="email"><b>Correo</b></label><br>
+                <input type="email" placeholder="Ingresa un correo" name="email" >
+                   </div>
+                   <div>
+                <label for="psw"><b>Contraseña</b></label><br>
+                <input type="password" placeholder="Ingresa una contraseña" name="psw" >
+                <button class="container__btn" type="submit">Registrarse</button>
+            </div>     
+                  </div> 
+            </form>
+              <form id="loginForm" class="container flex">
+                <div class="container__LoggedForm">
+                  
+                    <button id="signoutBtn" type="button">Cerrar sesión</button>
+                </div>
+                <div class="container__noLoggedForm">
+                    <div>
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" placeholder="Ingresa tu email" name="email" >
+                </div>
+                <div>
+                <label for="psw"><b>Contraseña</b></label><br>
+                <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
+                <button type="submit">Iniciar sesión</button>
+                </div>
+                </div>
+                </form>
+    
+            </div>
+          </div>
+        <nav class="navbarm flex">
+            <button class="navbarm__hamburg">
+                    <img  src="./img/hamburguer.png" alt="Menu hamburguesa">
+            </button>
+            <div class="navbarm__logo">
+                <img src="./img/logom.png" alt="Logo FEP movil">
+            </div>
+            <div class="navbarm__buttons flex"> 
+            <button>
+                <img src="./img/carrito.png">
+            </button> 
+            <button>
+                <img src="./img/buscar.png">
+            </button>
+    </div>
+        </nav>
+        </header>
+        <h3 class="shopTitle">Boletas</h3>
     <label for="category">Filtrar por categoría</label>
     <select name="category" id="category">
         <option value="">Todas</option>
@@ -33,6 +133,38 @@
         <div class="loader"></div>
 
     </section>
+    <footer class="footer flex">
+        <img class="footerimg" src="./img/footer.png" alt="imagen decorativa del footer">
+        <div class="footer__newsycontact">
+            <div class="footer__newsletter">
+                <p>Suscribete con tu correo para conocer las últimas novedades sobre Un Mundo Distinto:</p>
+                <input placeholder="Escribe tu correo" type="email" name="email" id="email">
+                <button>Suscribirse</button>
+                <div class="tyc flex">
+                    <input type="checkbox" name="terminos y condiciones" id="tyc">
+                    <p>Aceptar términos y condiciones</p>
+                </div>
+            </div>
+            <div class="footer__contact flex">
+                
+                <ul>
+                    <li><h3>Contacto</h3></li>
+                    <li>
+                        <p>Tel: +57 31200212120</p>
+                    </li>
+                    <li>
+                        <p>estereopicnic@paramo.com.co</p>
+                    </li>
+                    <li>
+                        <p>Fax: 010292212</p>
+                    </li>
+                </ul>
+             
+                   <p>© Festival Estereo Picnic 2022 <br>
+                    Todos los derechos reservados</p> 
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./src/js/shop.js" type="module"></script>
 </html>
