@@ -14,12 +14,14 @@ let cart = [];
 
 async function loadProducts() {
     const firebaseProducts = await getProducts(db);
+   
     productSection.innerHTML = "";
     firebaseProducts.forEach(product => {
         renderProduct(product);
     });
 
     products = firebaseProducts;
+   // console.log(products);
 }
 
 
@@ -39,16 +41,18 @@ function renderProduct(item) {
     '<button class="product__cart">Añadir al carrito</button>';
 
     product.innerHTML = `
-    <img src="${coverImage}" alt="" class="product__image">
-    <div class="product__info">
-        <p class="product__category">${item.category}</p> 
-        <h2 class="product__name">${item.name}</h2>
-        <h3 class="product__price">${currencyFormat(item.price)}</h3>
+    <div class="product" id="obj0">
+        <h3 class="product__name">${item.name}</h3>
+        <img class="product__image" src="${coverImage}">
+        <div class="product__flex flex">
+        <p class="product__price">Precio:${currencyFormat(item.price)}</p>
         ${productButtonCart}
+        </div>
     </div>
     `;
 
     productSection.appendChild(product);
+    console.log(productSection);
 
     const productCartButton = product.querySelector(".product__cart");
 
@@ -67,7 +71,7 @@ function renderProduct(item) {
 
     });
 }
-function filterBy(){
+ function filterBy(){
     const newCategory = categoryFilter.value;
     const newOrder = orderFilter.value;
 
@@ -100,7 +104,7 @@ categoryFilter.addEventListener("change", e => {
 
 orderFilter.addEventListener("change", e => {
     filterBy();
-});
+}); 
 
 
 onAuthStateChanged(auth, async (user) => {

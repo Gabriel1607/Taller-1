@@ -235,7 +235,8 @@ transform: scale(1.1);
 
 /*SHOP*/
 
-.product a{
+.product {
+   button{
     background-color: #45A041;
     border: 4px solid black;
     padding: 10px;
@@ -244,10 +245,16 @@ transform: scale(1.1);
     font-family: 'Titillium Web', sans-serif;
     margin: 7px 159px;
     margin-bottom: 26px;
-}
-.product{
-    display: none;
+   }
+    &__flex{
+flex-direction: column;
+text-align: center;
     }
+    &__price{
+        background-color: #19AED2;
+    }
+}
+
 .forms{
     flex-direction: column;
     align-items: flex-end;
