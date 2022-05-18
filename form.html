@@ -14,7 +14,7 @@
 <body>
     <h2>Crear nuevo producto</h2>
 <div class="formalign flex">
-    <div class="forms flex">
+    <form id="createProductForm" class="forms flex">
         <div class="form">
             <label for="name">Nombre:</label>
             <input type="text" id="name">
@@ -24,23 +24,25 @@
             <input type="number" id="price">
         </div>
         <div class="form">
-            <label for="id">ID:</label>
-            <input type="number" id="id">
-        </div>
-        <div class="form">
             <label for="image">Ruta de la imagen:</label>
-            <input type="text" id="image">
+            <input type="file" multiple accept=".png,.jpg,.jpeg" id="image">
         </div>
         <div class="form">
-            <label for="quant">Cantidad:</label>
-            <input type="numbers" id="quant">
+            <label for="category">Categoría:</label>
+            <select name="category" id="category">
+                <option value="">Todas</option>
+                <option value="3days">Boletas 3 días</option>
+                <option value="1day">Boletas día individual</option>
+                <option value="combos">Combos</option>
+            </select>
         </div>
         <div class="form">
             <label for="descr">Descripción:</label>
             <input type="text" id="descr">
         </div>
         <input type="submit" id="submit">  
-    </div>
+    </form>
 </div>
 </body>
+<script src="./src/js/productForm.js" type="module"></script>
 </html>

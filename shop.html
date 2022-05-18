@@ -12,33 +12,27 @@
     <link href="./src/css/styles.scss" rel="stylesheet">
 </head>
 <body>
-<div class="products flex">
-<div class="product" id="obj0">
-        <h3 class="name">#</h3>
-        <img class="image" src="#">
-        <a href="#">Añadir al carrito</a>
-</div>
-<div class="product" id="obj1">
-    <h3 class="name">#</h3>
-    <img class="image" src="#">
-    <a href="#">Añadir al carrito</a>
-</div>
-<div class="product" id="obj2">
-    <h3 class="name">#</h3>
-    <img class="image" src="#">
-    <a href="#">Añadir al carrito</a>
-</div>
-<div class="product" id="obj3">
-    <h3 class="name">#</h3>
-    <img class="image" src="#">
-    <a href="#">Añadir al carrito</a>
-</div>
-<div class="product" id="obj4">
-    <h3 class="name">#</h3>
-    <img class="image" src="#">
-    <a href="#">Añadir al carrito</a>
-</div>
-</div>
+    <label for="category">Filtrar por categoría</label>
+    <select name="category" id="category">
+        <option value="">Todas</option>
+        <option value="3days">Boletas 3 días</option>
+        <option value="1day">Boletas día individual</option>
+        <option value="combos">Combos</option>
+    </select>
+
+    <label for="order">Ordenar por</label>
+    <select name="order" id="order">
+        <option value="">Selecciona una opción</option>
+        <option value="asc">Precio: De mayor a menor</option>
+        <option value="desc">Precio: De menor a mayor</option>
+    </select>
+
+    <section class="products" id="products">
+       
+
+        <div class="loader"></div>
+
+    </section>
 </body>
-<script src="./src/js/script.js"></script>
+<script src="./src/js/shop.js" type="module"></script>
 </html>
