@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import{onAuthStateChanged} from "firebase/auth";
+import{onAuthStateChanged,signOut} from "firebase/auth";
 
 
 async function createUser(auth, { email, password }) {
@@ -22,7 +22,6 @@ async function createUser(auth, { email, password }) {
  async function login(auth, email, password) {
      try {
          const { user } = await signInWithEmailAndPassword(auth, email, password);
-         alert(`Bienvenido, usuario ${user.email}`);
      } catch(e) {
         console.log(e);
          alert("Correo o contraseña inválida :(");
@@ -41,5 +40,6 @@ async function createUser(auth, { email, password }) {
      createUser,
      login,
      addUserToDatabase,
-     onAuthStateChanged
+     onAuthStateChanged,
+     signOut
  }

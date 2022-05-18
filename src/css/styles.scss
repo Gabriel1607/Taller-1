@@ -288,8 +288,17 @@ transform: scale(1.1);
         padding: 8px 0px;
         margin: 10px 0px;
     }
+    &__LoggedForm {
+        
+            display: none;
+        
+          
+    }
+    &__noLoggedForm{
+        display: block;
+    }
 }
- button[type=submit] {
+ button[type=submit],button[type=button] {
     background-color: #45A041;
     border: 4px solid black;
     padding: 10px;

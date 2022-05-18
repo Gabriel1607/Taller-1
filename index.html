@@ -56,7 +56,11 @@
           </div>
       
           <form id="registerForm" class="container flex">
-              <div>
+            <div id="logd" class="container__LoggedForm">
+                <span id ="currentUserGreet">Bienvenido, usuario</span>
+            </div>
+              <div id="logdn't" class="container__noLoggedForm">
+                  <div>
             <label for="uname"><b>Usuario</b></label><br>
             <input type="text" placeholder="Ingresa un usuario" name="uname" >
                </div>
@@ -67,19 +71,26 @@
                <div>
             <label for="psw"><b>Contraseña</b></label><br>
             <input type="password" placeholder="Ingresa una contraseña" name="psw" >
-               </div>  
             <button class="container__btn" type="submit">Registrarse</button>
-            </form>
+        </div>     
+              </div> 
+        </form>
           <form id="loginForm" class="container flex">
-            <div>
+            <div class="container__LoggedForm">
+              
+                <button id="signoutBtn" type="button">Cerrar sesión</button>
+            </div>
+            <div class="container__noLoggedForm">
+                <div>
             <label for="email"><b>Email</b></label><br>
             <input type="email" placeholder="Ingresa tu email" name="email" >
             </div>
             <div>
             <label for="psw"><b>Contraseña</b></label><br>
             <input type="password" placeholder="Ingresa tu contraseña" name="psw" >
-             </div>
             <button type="submit">Iniciar sesión</button>
+            </div>
+            </div>
             </form>
 
         </div>
